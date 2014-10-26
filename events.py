@@ -1,0 +1,2 @@
+class Events:
+    PACKET_RECEIVED = "DATA_RECEIVED"

@@ -1,0 +1,176 @@
+1414314057.006800 6972 webconnserver.py,27: Binding SocketServer to (('', 8881),)
+1414314057.007800 7992 webconnserver.py,38: SocketServer started
+1414314118.004800 4852 webconnserver.py,27: Binding SocketServer to ('', 8881)
+1414314118.005800 1128 webconnserver.py,38: SocketServer started
+1414314196.242800 7644 webconnserver.py,28: Binding SocketServer to ('', 8881)
+1414314196.243800 2820 webconnserver.py,39: SocketServer started
+1414314212.317800 4920 webconnserver.py,28: Binding SocketServer to ('', 8881)
+1414314212.364800 7768 webconnserver.py,39: SocketServer started
+1414314279.103800 6496 webconnserver.py,27: Binding SocketServer to ('', 8881)
+1414314279.104800 4352 webconnserver.py,38: SocketServer started
+1414314364.847800 7968 webconnserver.py,27: Binding SocketServer to ('', 8881)
+1414314364.848800 6160 webconnserver.py,38: SocketServer started
+1414314386.794800 7088 webconnserver.py,27: Binding SocketServer to ('', 8881)
+1414314386.795800 7712 webconnserver.py,38: SocketServer started
+1414314393.536800 6224 webconnserver.py,10: Connection from ('127.0.0.1', 53739)
+1414315731.994800 5196 webconnserver.py,48: Binding SocketServer to ('', 8881)
+1414315731.995800 5116 webconnserver.py,59: SocketServer started
+1414315822.986800 6488 webconnserver.py,49: Binding SocketServer to ('', 8881)
+1414315822.990800 5452 webconnserver.py,60: SocketServer started
+1414316354.387800 6392 webconnserver.py,49: Binding SocketServer to ('', 8881)
+1414316354.388800 4048 webconnserver.py,60: SocketServer started
+1414316358.522800 8072 webconnserver.py,14: Connection from ('127.0.0.1', 54157)
+1414316409.374800 6500 webconnserver.py,50: Binding SocketServer to ('', 8881)
+1414316409.375800 5520 webconnserver.py,61: SocketServer started
+1414316415.561800 6984 webconnserver.py,14: Connection from ('127.0.0.1', 54167)
+1414316423.063800 6984 webconnserver.py,41: Disconnected from ('127.0.0.1', 54167)
+1414316441.816800 2660 webconnserver.py,51: Binding SocketServer to ('', 8881)
+1414316441.818800 3228 webconnserver.py,62: SocketServer started
+1414316446.513800 5916 webconnserver.py,14: Connection from ('127.0.0.1', 54169)
+1414316456.532800 5916 webconnserver.py,42: Disconnected from ('127.0.0.1', 54169)
+1414316493.963800 7652 webconnserver.py,52: Binding SocketServer to ('', 8881)
+1414316493.964800 6336 webconnserver.py,63: SocketServer started
+1414316500.375800 7216 webconnserver.py,14: Connection from ('127.0.0.1', 54220)
+1414316523.503800 6092 webconnserver.py,55: Binding SocketServer to ('', 8881)
+1414316523.505800 4352 webconnserver.py,66: SocketServer started
+1414316528.350800 8152 webconnserver.py,14: Connection from ('127.0.0.1', 54223)
+1414316554.537800 2820 webconnserver.py,55: Binding SocketServer to ('', 8881)
+1414316554.538800 6640 webconnserver.py,66: SocketServer started
+1414316558.080800 3224 webconnserver.py,14: Connection from ('127.0.0.1', 54227)
+1414316573.860800 3224 webconnserver.py,32: Packet started!
+1414316589.854800 2976 webconnserver.py,55: Binding SocketServer to ('', 8881)
+1414316589.855800 7404 webconnserver.py,66: SocketServer started
+1414316593.051800 6376 webconnserver.py,14: Connection from ('127.0.0.1', 54229)
+1414316601.872800 6376 webconnserver.py,32: Packet started!
+1414316601.885800 6376 eventhandler.py,14: Event Triggered: DATA_RECEIVED
+1414316601.890800 6376 webconnserver.py,38: Packet received: {"cat":"dog"}
+1414316732.775800 8068 webconnserver.py,51: Binding SocketServer to ('', 8881)
+1414316732.777800 7124 webconnserver.py,62: SocketServer started
+1414316739.979800 884 webconnserver.py,14: Connection from ('127.0.0.1', 54280)
+1414316753.423800 884 webconnserver.py,30: Packet started!
+1414316825.413800 6204 webconnserver.py,56: Binding SocketServer to ('', 8881)
+1414316825.414800 6688 webconnserver.py,67: SocketServer started
+1414316828.610800 8004 webconnserver.py,14: Connection from ('127.0.0.1', 54290)
+1414316836.207800 8004 webconnserver.py,30: Packet started!
+1414316857.695800 5512 webconnserver.py,57: Binding SocketServer to ('', 8881)
+1414316857.696800 1260 webconnserver.py,68: SocketServer started
+1414316860.698800 3164 webconnserver.py,14: Connection from ('127.0.0.1', 54294)
+1414316866.351800 3164 webconnserver.py,30: Packet started!
+1414316866.361800 3164 webconnserver.py,41: Malformed packet!
+1414316879.662800 3164 webconnserver.py,48: Disconnected from ('127.0.0.1', 54294)
+1414317009.358800 6956 webconnserver.py,58 20: Binding SocketServer to ('', 8881)
+1414317009.359800 3540 webconnserver.py,69 20: SocketServer started
+1414317012.944800 7800 webconnserver.py,14 20: Connection from ('127.0.0.1', 54321)
+1414317012.969800 7800 webconnserver.py,31 10: Data Received: 
+1414317012.994800 7800 webconnserver.py,31 10: Data Received:  
+1414317013.001800 7800 webconnserver.py,31 10: Data Received: 
+1414317013.011800 7800 webconnserver.py,31 10: Data Received: '
+1414317013.021800 7800 webconnserver.py,31 10: Data Received: 
+1414317013.031800 7800 webconnserver.py,31 10: Data Received: 
+1414317013.041800 7800 webconnserver.py,31 10: Data Received: 
+1414317015.999800 7800 webconnserver.py,31 10: Data Received: t
+1414317015.999800 7800 webconnserver.py,31 10: Data Received: h
+1414317015.999800 7800 webconnserver.py,31 10: Data Received: i
+1414317015.999800 7800 webconnserver.py,31 10: Data Received: s
+1414317015.999800 7800 webconnserver.py,31 10: Data Received:  
+1414317015.999800 7800 webconnserver.py,31 10: Data Received: i
+1414317016.000800 7800 webconnserver.py,31 10: Data Received: s
+1414317016.000800 7800 webconnserver.py,31 10: Data Received:  
+1414317016.005800 7800 webconnserver.py,31 10: Data Received: a
+1414317016.010800 7800 webconnserver.py,31 10: Data Received:  
+1414317016.010800 7800 webconnserver.py,31 10: Data Received: f
+1414317016.010800 7800 webconnserver.py,31 10: Data Received: a
+1414317016.010800 7800 webconnserver.py,31 10: Data Received: k
+1414317016.015800 7800 webconnserver.py,31 10: Data Received: e
+1414317016.015800 7800 webconnserver.py,31 10: Data Received:  
+1414317016.015800 7800 webconnserver.py,31 10: Data Received: p
+1414317016.015800 7800 webconnserver.py,31 10: Data Received: a
+1414317016.015800 7800 webconnserver.py,31 10: Data Received: c
+1414317016.015800 7800 webconnserver.py,31 10: Data Received: k
+1414317016.016800 7800 webconnserver.py,31 10: Data Received: e
+1414317016.016800 7800 webconnserver.py,31 10: Data Received: t
+1414317016.021800 7800 webconnserver.py,31 10: Data Received: !
+1414317016.021800 7800 webconnserver.py,31 10: Data Received: 
+1414317016.021800 7800 webconnserver.py,31 10: Data Received: 
+
+1414317058.399800 5924 webconnserver.py,55 20: Binding SocketServer to ('', 8881)
+1414317058.399800 788 webconnserver.py,66 20: SocketServer started
+1414317062.121800 6784 webconnserver.py,14 20: Connection from ('127.0.0.1', 54331)
+1414317067.844800 6784 webconnserver.py,39 40: Malformed packet!
+1414317182.086800 864 webconnserver.py,60 20: Binding SocketServer to ('', 8881)
+1414317182.087800 7488 webconnserver.py,71 20: SocketServer started
+1414317186.311800 6068 webconnserver.py,14 20: Connection from ('127.0.0.1', 54352)
+1414317190.471800 6068 webconnserver.py,44 40: Malformed packet!
+1414317196.951800 6068 webconnserver.py,44 40: Malformed packet!
+1414317203.225800 6068 webconnserver.py,44 40: Malformed packet!
+1414317213.933800 6068 webconnserver.py,44 40: Malformed packet!
+1414317222.172800 6068 webconnserver.py,44 40: Malformed packet!
+1414317226.529800 6068 webconnserver.py,51 20: Disconnected from ('127.0.0.1', 54352)
+1414317243.007800 6784 webconnserver.py,62 20: Binding SocketServer to ('', 8881)
+1414317243.008800 7924 webconnserver.py,73 20: SocketServer started
+1414317246.058800 7648 webconnserver.py,14 20: Connection from ('127.0.0.1', 54357)
+1414317251.936800 7648 webconnserver.py,46 40: Malformed packet!
+1414317258.290800 7648 webconnserver.py,46 40: Malformed packet!
+1414317277.303800 7096 webconnserver.py,64 20: Binding SocketServer to ('', 8881)
+1414317277.304800 7940 webconnserver.py,75 20: SocketServer started
+1414317283.574800 7256 webconnserver.py,14 20: Connection from ('127.0.0.1', 54361)
+1414317289.911800 7256 webconnserver.py,47 40: Malformed packet!
+1414317294.772800 7256 eventhandler.py,14 10: Event Triggered: DATA_RECEIVED
+1414317294.777800 7256 webconnserver.py,41 10: Packet received: 
+1414317303.216800 7256 webconnserver.py,55 20: Disconnected from ('127.0.0.1', 54361)
+1414317326.458800 4604 webconnserver.py,64 20: Binding SocketServer to ('', 8881)
+1414317326.459800 8032 webconnserver.py,75 20: SocketServer started
+1414317329.430800 6956 webconnserver.py,14 20: Connection from ('127.0.0.1', 54367)
+1414317333.078800 6956 eventhandler.py,14 10: Event DATA_RECEIVED: {'cat': 'cat'}
+1414317333.083800 6956 webconnserver.py,40 10: Packet received: {"cat":"cat"}
+1414317504.661800 4360 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414317504.662800 5828 webconnserver.py,74 INFO: SocketServer started
+1414317513.818800 4988 webconnserver.py,14 INFO: Connection from ('127.0.0.1', 54442)
+1414317518.257800 4988 eventhandler.py,14 DEBUG: Event DATA_RECEIVED: {'packet': 'data'}
+1414317706.245800 3816 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414317706.246800 6908 webconnserver.py,74 INFO: SocketServer started
+1414317712.710800 4776 webconnserver.py,14 INFO: Connection from ('127.0.0.1', 54455)
+1414317719.956800 4776 eventhandler.py,14 DEBUG: Event DATA_RECEIVED: {'data': 'Packet is awesome!'}
+1414317727.256800 4776 webconnserver.py,54 INFO: Disconnected from ('127.0.0.1', 54455)
+1414317756.458800 3224 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414317756.458800 4440 webconnserver.py,74 INFO: SocketServer started
+1414317759.643800 3384 webconnserver.py,14 INFO: Connection from ('127.0.0.1', 54459)
+1414317766.562800 3384 eventhandler.py,14 DEBUG: Event DATA_RECEIVED: {'packet': 'data'}
+1414317773.903800 3384 eventhandler.py,14 DEBUG: Event DATA_RECEIVED: {'data': 'packet'}
+1414317777.617800 3384 webconnserver.py,54 INFO: Disconnected from ('127.0.0.1', 54459)
+1414318951.939800 4760 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414318951.942800 5896 webconnserver.py,74 INFO: SocketServer started
+1414319445.694800 1736 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414319445.695800 2880 webconnserver.py,74 INFO: SocketServer started
+1414319563.256800 3388 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414319563.257800 5752 webconnserver.py,74 INFO: SocketServer started
+1414319802.692800 7072 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414319802.693800 6124 webconnserver.py,74 INFO: SocketServer started
+1414319890.228800 3668 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414319890.230800 5084 webconnserver.py,74 INFO: SocketServer started
+1414319907.582800 3248 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414319907.585800 5808 webconnserver.py,74 INFO: SocketServer started
+1414319927.943800 8016 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414319927.945800 5672 webconnserver.py,74 INFO: SocketServer started
+1414320121.073800 6420 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414320121.075800 852 webconnserver.py,74 INFO: SocketServer started
+1414320318.695800 5516 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414320318.697800 2372 webconnserver.py,74 INFO: SocketServer started
+1414320352.844800 7000 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414320352.845800 6912 webconnserver.py,74 INFO: SocketServer started
+1414320371.796800 6716 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414320371.798800 6932 webconnserver.py,74 INFO: SocketServer started
+1414320745.677800 7800 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414320745.678800 6696 webconnserver.py,74 INFO: SocketServer started
+1414320910.386800 5928 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414320910.387800 6556 webconnserver.py,74 INFO: SocketServer started
+1414321118.534800 7912 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414321118.535800 7804 webconnserver.py,74 INFO: SocketServer started
+1414321243.987800 7584 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414321243.989800 6364 webconnserver.py,74 INFO: SocketServer started
+1414321376.114800 3248 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414321376.115800 2872 webconnserver.py,74 INFO: SocketServer started
+1414321469.760800 1368 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414321469.763800 7944 webconnserver.py,74 INFO: SocketServer started
+1414323928.942800 3820 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414323928.943800 2600 webconnserver.py,74 INFO: SocketServer started

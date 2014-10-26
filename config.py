@@ -1,0 +1,1 @@
+LOGGING_NAME = "Application"
