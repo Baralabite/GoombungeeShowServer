@@ -1,0 +1,12 @@
+1414368152.560000 5664 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414368152.560000 5680 webconnserver.py,74 INFO: SocketServer started
+1414368183.354400 4148 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414368183.354400 4208 webconnserver.py,74 INFO: SocketServer started
+1414383582.960000 5976 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414383582.963000 4384 webconnserver.py,74 INFO: SocketServer started
+1414384306.140000 2468 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414384306.143000 5800 webconnserver.py,74 INFO: SocketServer started
+1414384410.517000 2412 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414384410.520000 1692 webconnserver.py,74 INFO: SocketServer started
+1414397939.486000 5976 webconnserver.py,63 INFO: Binding SocketServer to ('', 8881)
+1414397939.494000 3176 webconnserver.py,74 INFO: SocketServer started

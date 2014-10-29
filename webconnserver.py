@@ -6,8 +6,6 @@ from config import *
 from events import Events
 from ast import literal_eval
 
-
-
 class WebRequestHandler(socketserver.BaseRequestHandler):
     def handle(self):
         self.logger = logging.getLogger(LOGGING_NAME+".SocketServer.RequestHandler")
@@ -36,7 +34,7 @@ class WebRequestHandler(socketserver.BaseRequestHandler):
                     print(packetContents)
 
                     try:
-                        EventHandler.callEvent(Events.PACKET_RECEIVED, literal_eval(packetContents))
+                        EventHandler.callEvent(Events.PACKET_RECEIVED, (literal_eval(packetContents), self.request.send))
                         packetContents = ""
                     except ValueError:
                         self.logger.error("Malformed packet!")
@@ -57,7 +55,7 @@ class WebSocketServer():
     def __init__(self):
         self.logger = logging.getLogger(LOGGING_NAME+".SocketServer")
 
-        HOST = ('', 8881)
+        HOST = ('', 1998)
 
         self.server = socketserver.ThreadingTCPServer(HOST, WebRequestHandler)
         self.logger.info("Binding SocketServer to %s", HOST)

@@ -20,6 +20,9 @@ class Application:
         self.webSocketServer = WebSocketServer()
         self.webSocketServer.start()
 
+        EventHandler.addListener("echo", Events.PACKET_RECEIVED, self.onPacketReceived)
+
+
         self.loop()
 
     """ Sets up the logging """
@@ -47,6 +50,24 @@ class Application:
     def loop(self):
         code.interact(local=locals())
         pass
+
+    def onPacketReceived(self, data):
+        packet = data[0]
+        sendFunc = data[1]
+        def respond(value):
+            sendFunc(('{"%s":"%s"}\n' % ("response", value)).encode("UTF-8"))
+
+        if "command" in packet:
+            args = packet["command"].split(" ")
+
+            if args[0] == "Ping":
+                respond("Pong")
+            elif args[0] == "Handshake":
+                respond("Handshake")
+
+        else:
+            respond("Command not found")
+
 
 
 
