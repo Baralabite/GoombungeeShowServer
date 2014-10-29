@@ -60,10 +60,21 @@ class Application:
         if "command" in packet:
             args = packet["command"].split(" ")
 
-            if args[0] == "Ping":
-                respond("Pong")
-            elif args[0] == "Handshake":
-                respond("Handshake")
+            if args[0] == "ping":
+                respond("pong")
+            elif args[0] == "handshake":
+                respond("handshook")
+            elif args[0] == "queue":
+                print("Person Queued with ID %s" % args[1])
+                respond("queued")
+            elif args[0] == "getControlTime":
+                respond("50")
+            elif args[0] == "getQueuedPeople":
+                respond("3")
+            elif args[0] == "getETA":
+                respond("60");
+            else:
+                respond("UNKNOWN COMMAND");
 
         else:
             respond("Command not found")
