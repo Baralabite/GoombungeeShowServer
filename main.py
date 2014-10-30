@@ -17,12 +17,16 @@ class Application:
         self.hexapod = BaralabaBob.Hexapod(("localhost", 1997))
         self.hexapod.start()
 
+        self.m = self.hexapod.mandibles
+
         self.queuemanager = QueueManager()
 
         self.webSocketServer = WebSocketServer()
         self.webSocketServer.start()
 
         EventHandler.addListener("echo", Events.PACKET_RECEIVED, self.onPacketReceived)
+        EventHandler.addListener("onClientConnect", Events.NEW_CLIENT_CONTROLLER, self.onNewClientController)
+        EventHandler.addListener("onClientTimeUp", Events.CLIENT_TIME_UP, self.onClientTimeUp)
 
         self.loop()
 
@@ -63,28 +67,34 @@ class Application:
 
             if args[0] == "ping":
                 respond("pong")
+
             elif args[0] == "handshake":
                 gen = self.queuemanager.generateID()
                 respond("handshook %s"%gen)
-                self.logger.info("New connection. ID assigned %s" % gen)
+                EventHandler.callEvent(Events.CLIENT_CONNECT, gen)
+
             elif args[0] == "cookieDump":
                 self.logger.debug("Cookie dump: %s"%args[1])
                 respond("ok")
+
             elif args[0] == "queue":
                 result = self.queuemanager.addToQueue(args[1])
                 if result:
                     respond("queued")
                 else:
                     respond("error")
+
             elif args[0] == "getControlTime":
                 respond(str(Config.CONTROL_TIME))
+
             elif args[0] == "getQueuedPeople":
                 respond(self.queuemanager.getPlaceInQueue(args[1]))
+
             elif args[0] == "getETA":
                 respond(self.queuemanager.getTimeUntilTurn(args[1]))
+
             elif args[0] == "isTurn":
                 respond(self.queuemanager.isTurn(args[1]))
-
 
             elif args[0] == "robot":
                 self.handleRobotCommand(args, sendFunc)
@@ -110,10 +120,33 @@ class Application:
         #Fun stuff!
         command = args[1]
 
+        #Jaw Stuff
         if command == "closeJaw":
-            self.hexapod.legs.turnOn()
+            self.hexapod.mandibles.closeJaw()
         elif command == "openJaw":
-            self.hexapod.legs.turnOff();
+            self.hexapod.mandibles.openJaw()
+        elif command == "rollJaw":
+            self.hexapod.mandibles.roll.setAngle(int(args[2]))
+        elif command == "pitchJaw":
+            self.hexapod.mandibles.pitch.setAngle(int(args[2]))
+        elif command == "yawJaw":
+            self.hexapod.mandibles.yaw.setAngle(int(args[2]))
+
+        #Tail Stuff
+        elif command == "pitchTail":
+            self.hexapod.tail.pitch.setAngle(int(args[2]))
+        elif command == "yawTail":
+            self.hexapod.tail.yaw.setAngle(int(args[2]))
+
+
+
+    def onNewClientController(self, data):
+        self.logger.info("New connection. ID assigned %s" % data)
+        self.hexapod.turnOn()
+
+    def onClientTimeUp(self, data):
+        self.logger.info("Client's control time has expired.")
+        self.hexapod.turnOff()
 
     def shutdown(self):
         EventHandler.callEvent(Events.SERVER_SHUTDOWN, None)
