@@ -7,13 +7,16 @@ from events import Events
 from ast import literal_eval
 
 class WebRequestHandler(socketserver.BaseRequestHandler):
+
     def handle(self):
-        self.logger = logging.getLogger(LOGGING_NAME+".SocketServer.RequestHandler")
-        self.logger.info("Connection from %s", self.client_address)
+        self.running = True
+        EventHandler.addListener("onQuit"+str(current_thread().ident), Events.SERVER_SHUTDOWN, self.shutdown)
+        self.logger = logging.getLogger(Config.LOGGING_NAME+".SocketServer.RequestHandler")
+        self.logger.debug("Connection from %s", self.client_address)
 
         packetStarted = False
         packetContents = ""
-        while True:
+        while self.running:
             receivedData = self.request.recv(1)
             if not receivedData: break  # If there is no dataz, then probably the client disconnected.
             try:
@@ -22,38 +25,43 @@ class WebRequestHandler(socketserver.BaseRequestHandler):
                 continue
 
             if not packetStarted:       # If the packetStarted flag has not been set, set it when "{" is received
-                if receivedData == "{":
+                if receivedData == "~":
                     packetStarted = True
-                    packetContents = packetContents + receivedData
+                    packetContents = packetContents + "{"
             elif packetStarted:         # If the packet has started, append stuff to it until "}" is received
-                if receivedData == "}":
-                    packetContents = packetContents + receivedData
+                if receivedData == "~":
+                    packetContents = packetContents + "}"
                     packetStarted = False
 
                     # If the packet is valid, then fire an event - if not report it through logging
-                    print(packetContents)
-
                     try:
                         EventHandler.callEvent(Events.PACKET_RECEIVED, (literal_eval(packetContents), self.request.send))
                         packetContents = ""
+                        packetContents = ""
                     except ValueError:
-                        self.logger.error("Malformed packet!")
+                        self.logger.error(packetContents)
+                        self.logger.error("Malformed packet! - VALUE ERROR")
                         packetContents = ""
-                        continue
+                        break
                     except SyntaxError:
-                        self.logger.error("Malformed packet!")
+                        self.logger.error(packetContents)
+                        self.logger.error("Malformed packet! - SYNTAX ERROR")
                         packetContents = ""
-                        continue
+                        break
 
                 else:
                     packetContents = packetContents + receivedData
 
         self.request.close()
-        self.logger.info("Disconnected from %s", self.client_address)
+        self.logger.debug("Disconnected from %s", self.client_address)
+
+    def shutdown(self, data):
+        self.running = False
 
 class WebSocketServer():
     def __init__(self):
-        self.logger = logging.getLogger(LOGGING_NAME+".SocketServer")
+        self.logger = logging.getLogger(Config.LOGGING_NAME+".SocketServer")
+        EventHandler.addListener("onQuitWebSocketServer", Events.SERVER_SHUTDOWN, self.stop)
 
         HOST = ('', 1998)
 
@@ -65,8 +73,9 @@ class WebSocketServer():
         self.serverThread.setDaemon(True)
         self.serverThread.start()
 
-    def stop(self):
+    def stop(self, data):
         self.server.shutdown()
+        self.logger.info("Shutting down the WebSocketServer...")
 
     def loop(self):
         self.logger.info("SocketServer started")
