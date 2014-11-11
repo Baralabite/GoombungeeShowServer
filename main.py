@@ -14,10 +14,8 @@ class Application:
     def start(self):
         self.initLogging()
 
-        self.hexapod = BaralabaBob.Hexapod(("localhost", 1997))
+        self.hexapod = BaralabaBob.Hexapod((Config.TCP_BRIDGE_HOST, Config.TCP_BRIDGE_PORT))
         self.hexapod.start()
-
-        self.m = self.hexapod.mandibles
 
         self.queuemanager = QueueManager()
 

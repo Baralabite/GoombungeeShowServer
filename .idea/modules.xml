@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://C:/Python34/Lib/site-packages/BaralabaBob/.idea/BaralabaBob.iml" filepath="C:/Python34/Lib/site-packages/BaralabaBob/.idea/BaralabaBob.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/GoombungeeShowServer.iml" filepath="$PROJECT_DIR$/.idea/GoombungeeShowServer.iml" />
     </modules>
   </component>

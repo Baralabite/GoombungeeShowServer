@@ -12,7 +12,7 @@ class WebRequestHandler(socketserver.BaseRequestHandler):
         self.running = True
         EventHandler.addListener("onQuit"+str(current_thread().ident), Events.SERVER_SHUTDOWN, self.shutdown)
         self.logger = logging.getLogger(Config.LOGGING_NAME+".SocketServer.RequestHandler")
-        self.logger.debug("Connection from %s", self.client_address)
+        #self.logger.debug("Connection from %s", self.client_address)
 
         packetStarted = False
         packetContents = ""
@@ -53,7 +53,7 @@ class WebRequestHandler(socketserver.BaseRequestHandler):
                     packetContents = packetContents + receivedData
 
         self.request.close()
-        self.logger.debug("Disconnected from %s", self.client_address)
+        #self.logger.debug("Disconnected from %s", self.client_address)
 
     def shutdown(self, data):
         self.running = False
