@@ -1,0 +1,23 @@
+1415708791.025000 6464 webconnserver.py,69 INFO: Binding SocketServer to ('', 1998)
+1415708791.026000 4344 webconnserver.py,81 INFO: SocketServer started
+1415708995.834000 604 queuemanager.py,30 DEBUG: Generated ID: Bz92qe
+1415708995.854000 3208 main.py,141 INFO: New connection. ID assigned Bz92qe
+1415708996.454000 3208 queuemanager.py,42 INFO: Person queued with ID Bz92qe
+1415708996.499000 8912 main.py,75 DEBUG: Cookie dump: {"connections":"1","ids":"["Bz92qe"]"}
+1415709025.854000 4908 main.py,145 INFO: Client's control time has expired.
+1415709221.091000 1660 queuemanager.py,30 DEBUG: Generated ID: DfCE4H
+1415709221.139000 5484 main.py,141 INFO: New connection. ID assigned DfCE4H
+1415709221.739000 5484 queuemanager.py,42 INFO: Person queued with ID DfCE4H
+1415709221.783000 2888 main.py,75 DEBUG: Cookie dump: {"connections":"2","ids":"["Bz92qe","DfCE4H"]"}
+1415709251.138000 6080 main.py,145 INFO: Client's control time has expired.
+1415710319.805000 9736 webconnserver.py,69 INFO: Binding SocketServer to ('', 1998)
+1415710319.808000 9360 webconnserver.py,81 INFO: SocketServer started
+1415710338.647000 6988 main.py,139 DEBUG: TurnOn signal received!
+1415710339.858000 5488 main.py,139 DEBUG: TurnOn signal received!
+1415710341.610000 9864 main.py,142 DEBUG: TurnOff signal received!
+1415710344.939000 9880 main.py,139 DEBUG: TurnOn signal received!
+1415710347.496000 7212 main.py,142 DEBUG: TurnOff signal received!
+1415710669.719000 6336 webconnserver.py,69 INFO: Binding SocketServer to ('', 1998)
+1415710669.724000 9260 webconnserver.py,81 INFO: SocketServer started
+1415710770.303000 7024 webconnserver.py,69 INFO: Binding SocketServer to ('', 1998)
+1415710770.304000 9744 webconnserver.py,81 INFO: SocketServer started

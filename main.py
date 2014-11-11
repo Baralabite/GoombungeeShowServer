@@ -4,7 +4,8 @@ from events import *
 import logging, time, datetime, code
 from config import *
 from queuemanager import QueueManager
-import BaralabaBob
+from BaralabaBob.model.hexapod import Hexapod
+from BaralabaBob.util.sequenceexecutor import *
 
 class Application:
     def __init__(self):
@@ -14,7 +15,7 @@ class Application:
     def start(self):
         self.initLogging()
 
-        self.hexapod = BaralabaBob.Hexapod((Config.TCP_BRIDGE_HOST, Config.TCP_BRIDGE_PORT))
+        self.hexapod = Hexapod()
         self.hexapod.start()
 
         self.queuemanager = QueueManager()
@@ -22,7 +23,7 @@ class Application:
         self.webSocketServer = WebSocketServer()
         self.webSocketServer.start()
 
-        EventHandler.addListener("echo", Events.PACKET_RECEIVED, self.onPacketReceived)
+        EventHandler.addListener("eacho", Events.PACKET_RECEIVED, self.onPacketReceived)
         EventHandler.addListener("onClientConnect", Events.NEW_CLIENT_CONTROLLER, self.onNewClientController)
         EventHandler.addListener("onClientTimeUp", Events.CLIENT_TIME_UP, self.onClientTimeUp)
 
@@ -97,7 +98,6 @@ class Application:
             elif args[0] == "robot":
                 self.handleRobotCommand(args, sendFunc)
 
-
             else:
                 respond("UNKNOWN COMMAND")
 
@@ -135,6 +135,17 @@ class Application:
             self.hexapod.tail.pitch.setAngle(int(args[2]))
         elif command == "yawTail":
             self.hexapod.tail.yaw.setAngle(int(args[2]))
+
+        elif command == "turnOn":
+            self.hexapod.turnOn()
+        elif command == "turnOff":
+            self.hexapod.turnOff()
+
+        #Sequencing Code
+        elif command == "shakeTail":
+            se = SequenceExecutor(self.hexapod, "tailShake.cfg", repeat=3).runSequence()
+
+
 
 
 

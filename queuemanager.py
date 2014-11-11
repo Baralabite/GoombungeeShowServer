@@ -61,7 +61,7 @@ class QueueManager:
             return -1
 
     def isTurn(self, id):
-        return self.currentPerson == id
+        return self.currentPerson == id or id == "MASTER"
 
     def getPlaceInQueue(self, id):
         try:
