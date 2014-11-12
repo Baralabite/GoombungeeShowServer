@@ -145,10 +145,6 @@ class Application:
         elif command == "shakeTail":
             se = SequenceExecutor(self.hexapod, "tailShake.cfg", repeat=3).runSequence()
 
-
-
-
-
     def onNewClientController(self, data):
         self.logger.info("New connection. ID assigned %s" % data)
         self.hexapod.turnOn()
