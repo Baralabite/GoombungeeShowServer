@@ -1,0 +1,85 @@
+1415767054.624000 10020 webconnserver.py,69 INFO: Binding SocketServer to ('', 1998)
+1415767054.626000 808 webconnserver.py,81 INFO: SocketServer started
+1415767078.812000 9848 queuemanager.py,30 DEBUG: Generated ID: 3xPeFM
+1415767078.872000 3968 main.py,153 INFO: New connection. ID assigned 3xPeFM
+1415767079.473000 3968 queuemanager.py,42 INFO: Person queued with ID 3xPeFM
+1415767079.548000 2268 main.py,76 DEBUG: Cookie dump: {"connections":"4","ids":"["Bz92qe","DfCE4H","3xPeFM"]"}
+1415767108.872000 7996 main.py,157 INFO: Client's control time has expired.
+1415767431.529000 1432 queuemanager.py,30 DEBUG: Generated ID: UVTiBx
+1415767431.608000 2732 main.py,153 INFO: New connection. ID assigned UVTiBx
+1415767432.209000 2732 queuemanager.py,42 INFO: Person queued with ID UVTiBx
+1415767432.267000 7932 main.py,76 DEBUG: Cookie dump: {"connections":"5","ids":"["Bz92qe","DfCE4H","3xPeFM","UVTiBx"]"}
+1415767446.947000 10844 queuemanager.py,30 DEBUG: Generated ID: yVEM3x
+1415767449.967000 10960 queuemanager.py,42 INFO: Person queued with ID yVEM3x
+1415767461.609000 6444 main.py,157 INFO: Client's control time has expired.
+1415767462.211000 6444 main.py,153 INFO: New connection. ID assigned yVEM3x
+1415767492.211000 11128 main.py,157 INFO: Client's control time has expired.
+1415767520.936000 9364 queuemanager.py,30 DEBUG: Generated ID: 7WL0ob
+1415767520.960000 9800 main.py,153 INFO: New connection. ID assigned 7WL0ob
+1415767521.682000 9800 queuemanager.py,42 INFO: Person queued with ID 7WL0ob
+1415767522.346000 2916 main.py,76 DEBUG: Cookie dump: {"connections":"7","ids":"["Bz92qe","DfCE4H","3xPeFM","UVTiBx","7WL0ob"]"}
+1415767550.961000 5392 main.py,157 INFO: Client's control time has expired.
+1415770834.062000 9000 queuemanager.py,30 DEBUG: Generated ID: NNI9hD
+1415770834.121000 3260 main.py,153 INFO: New connection. ID assigned NNI9hD
+1415770864.121000 6356 main.py,157 INFO: Client's control time has expired.
+1415770950.133000 7492 webconnserver.py,47 ERROR: {'command':'robot MASTER function turnOn(){
+                api("robot {} {}".format("MASTER", turnOn));
+            }'}
+1415770950.133000 7492 webconnserver.py,48 ERROR: Malformed packet! - SYNTAX ERROR
+1415771198.412000 10500 webconnserver.py,47 ERROR: {'command':'robot MASTER function turnOn(){
+                api("robot {} {}".format("MASTER", turnOn));
+            }'}
+1415771198.412000 10500 webconnserver.py,48 ERROR: Malformed packet! - SYNTAX ERROR
+1415771230.300000 9688 webconnserver.py,47 ERROR: {'command':'robot MASTER function turnOn(){
+                api("robot {} {}".format("MASTER", turnOn));
+            }'}
+1415771230.300000 9688 webconnserver.py,48 ERROR: Malformed packet! - SYNTAX ERROR
+1415771266.763000 1404 webconnserver.py,47 ERROR: {'command':'robot MASTER function turnOn(){
+                api("robot {} {}".format("MASTER", turnOn));
+            }'}
+1415771266.763000 1404 webconnserver.py,48 ERROR: Malformed packet! - SYNTAX ERROR
+1415771280.878000 3500 webconnserver.py,47 ERROR: {'command':'robot MASTER function turnOn(){
+                api("robot {} {}".format("MASTER", turnOn));
+            }'}
+1415771280.879000 3500 webconnserver.py,48 ERROR: Malformed packet! - SYNTAX ERROR
+1415771327.598000 11192 webconnserver.py,47 ERROR: {'command':'robot MASTER function turnOn(){
+                api("robot {} {}".format("MASTER", turnOn));
+            }'}
+1415771327.598000 11192 webconnserver.py,48 ERROR: Malformed packet! - SYNTAX ERROR
+1415771337.224000 3224 webconnserver.py,47 ERROR: {'command':'robot MASTER function turnOn(){
+                api("robot {} {}".format("MASTER", turnOn));
+            }'}
+1415771337.224000 3224 webconnserver.py,48 ERROR: Malformed packet! - SYNTAX ERROR
+1415771367.841000 2944 webconnserver.py,47 ERROR: {'command':'robot MASTER function turnOn(){
+                api("robot {} {}".format("MASTER", turnOn));
+            }'}
+1415771367.841000 2944 webconnserver.py,48 ERROR: Malformed packet! - SYNTAX ERROR
+1415771391.020000 9964 webconnserver.py,47 ERROR: {'command':'robot MASTER function turnOn(){
+                api("robot {} {}".format("MASTER", turnOn));
+            }'}
+1415771391.020000 9964 webconnserver.py,48 ERROR: Malformed packet! - SYNTAX ERROR
+1415771453.904000 10352 webconnserver.py,47 ERROR: {'command':'robot MASTER function turnOn(){
+                api("robot {} {}".format("MASTER", turnOn));
+                console.log("Turning on...");
+            }'}
+1415771453.904000 10352 webconnserver.py,48 ERROR: Malformed packet! - SYNTAX ERROR
+1415771485.380000 10800 webconnserver.py,47 ERROR: {'command':'robot MASTER function turnOn(){
+                api("robot {} {}".format("MASTER", turnOn));
+                console.log("Turning on...");
+            }'}
+1415771485.381000 10800 webconnserver.py,48 ERROR: Malformed packet! - SYNTAX ERROR
+1415771729.590000 11032 webconnserver.py,69 INFO: Binding SocketServer to ('', 1998)
+1415771729.591000 3128 webconnserver.py,81 INFO: SocketServer started
+1415771839.362000 4936 webconnserver.py,69 INFO: Binding SocketServer to ('', 1998)
+1415771839.364000 10728 webconnserver.py,81 INFO: SocketServer started
+1415771872.674000 4376 webconnserver.py,47 ERROR: {'command':'robot MASTER function turnOn(){
+                api("robot {} {}".format("MASTER", turnOn));
+                console.log("Turning on...");
+            }'}
+1415771872.674000 4376 webconnserver.py,48 ERROR: Malformed packet! - SYNTAX ERROR
+1415773977.333000 10288 webconnserver.py,69 INFO: Binding SocketServer to ('', 1998)
+1415773977.335000 10584 webconnserver.py,81 INFO: SocketServer started
+1415774014.044000 8116 webconnserver.py,69 INFO: Binding SocketServer to ('', 1998)
+1415774014.047000 8008 webconnserver.py,81 INFO: SocketServer started
+1415774075.995000 10396 webconnserver.py,69 INFO: Binding SocketServer to ('', 1998)
+1415774075.996000 8160 webconnserver.py,81 INFO: SocketServer started
