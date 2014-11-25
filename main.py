@@ -143,7 +143,16 @@ class Application:
 
         #Sequencing Code
         elif command == "shakeTail":
-            se = SequenceExecutor(self.hexapod, "tailShake.cfg", repeat=3).runSequence()
+            #se = SequenceExecutor(self.hexapod, "tailShake.cfg", repeat=3).runSequence()
+            pass
+        elif command == "mexicanWave":
+            se = SequenceExecutor()
+            a = se.getScript("mexicanWave")
+            b = a(self.hexapod)
+            self.hexapod.turnOn()
+            b.setFinishCallback(lambda: self.hexapod.turnOff())
+            b.onStart()
+
 
     def onNewClientController(self, data):
         self.logger.info("New connection. ID assigned %s" % data)
